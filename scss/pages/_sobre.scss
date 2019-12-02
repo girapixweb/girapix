@@ -1,0 +1,55 @@
+.team {
+  background-color: $grey;
+  min-height: 60vh;
+  padding: 30px 10%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media('>=desktop') {
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .member {
+    padding: 15px 0;
+    text-align: center;
+    color: $dark-blue;
+    text-transform: uppercase;
+
+    img {
+      width: 70%;
+
+      @include media('>=phone-wide', 'landscape') {
+        width: 40%;
+      }
+
+      @include media('>=tablet-wide') {
+        width: 100%;
+      }
+
+      @include media('>=desktop') {
+        width: 70%;
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: $bsemi;
+      padding: 10px 0 5px;
+
+      @include media('>=tablet-wide') {
+        font-size: 1.8rem;
+      }
+    }
+
+    h5 {
+      font-weight: $light;
+
+      @include media('>=tablet-wide') {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

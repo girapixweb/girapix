@@ -18,6 +18,7 @@ footer {
           padding: 30px 100px;
           opacity: .5;
           font-weight: $bsemi;
+          font-size: 1.8rem;
           @include transition(.5s);
 
           &:hover {

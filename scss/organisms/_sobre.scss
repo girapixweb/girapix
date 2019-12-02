@@ -1,0 +1,96 @@
+@import '../atoms/titulos';
+
+.homeSobre {
+  min-height: 100vh;
+  background-color: $grey;
+  padding: 0 10%;
+
+  @include media('>=desktop') {
+    background: {
+      image: url('../assets/girapix/bg-services.png');
+      size: cover;
+      repeat: no-repeat;
+      position: center left;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @include media('>=desktop-ultra') {
+    background: {
+      image: url('../assets/girapix/bg-services-uw.png');
+      size: 90%;
+      repeat: no-repeat;
+      position: center left;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .homeSobreContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    @include media('>=desktop') {
+      align-items: flex-start;
+    }
+
+    .homeSobreService {
+      text-align: center;
+      margin-top: 30px;
+
+      .homeSobreImg {
+        img {
+          width: 70%;
+
+          @include media('>=phone', 'landscape') {
+            width: 40%;
+            margin-top: 0px;
+          }
+        }
+      }
+
+      .homeSobreText {
+
+        h3 {
+          color: $blue;
+          font-size: 1.3rem;
+          margin: 20px 10px;
+        }
+
+        p {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    @include media('>=desktop') {
+      width: 40%;
+
+      .homeSobreService {
+        display: flex;
+        text-align: left;
+
+        .homeSobreImg {
+          width: 30%;
+          padding-right: 15px;
+
+          img {
+            width: 80%;
+          }
+        }
+
+        .homeSobreText {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

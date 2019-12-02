@@ -1,0 +1,54 @@
+footer {
+  background-color: $dark-blue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .footerContent {
+    ul {
+      li {
+        text-align: center;
+
+        a {
+          display: block;
+          color: $grey;
+          text-transform: uppercase;
+          padding: 30px 100px;
+          opacity: .5;
+          font-weight: $bsemi;
+          @include transition(.5s);
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+  }
+
+  .footerFooter {
+    display: none;
+
+    @include media('>=desktop') {
+      display: inline-flex;
+      position: absolute;
+      bottom: 30px;
+      right: 10%;
+      opacity: .5;
+      @include transition(.5s);
+
+      &:hover {
+        opacity: 1;
+      }
+
+      p {
+        color: $grey;
+        font-weight: $light;
+        padding: 10px 15px;
+      }
+    }
+  }
+}

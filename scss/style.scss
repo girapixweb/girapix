@@ -1,0 +1,14 @@
+// importar fontes
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap');
+
+// Importar mixins
+@import 'templates/mixins';
+@import 'templates/reset';
+
+// Importar fragmentos
+@import 'molecules/header';
+@import 'molecules/hero';
+@import 'molecules/footer';
+
+// Importas páginas
+@import 'pages/home';

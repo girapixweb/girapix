@@ -1,0 +1,61 @@
+.blog {
+  min-height: 100vh;
+  padding: 0 10%;
+  background-color: $grey;
+
+  .blogContent {
+    padding: 30px 0;
+    text-align: center;
+
+    .blogPost {
+      margin: 30px 0 100px;
+
+      a {
+        color: $dark-blue;
+        text-align: center;
+
+        &:hover {
+          color: $dark-blue;
+        }
+
+        .blogPostImg {
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+          line-height: 0;
+          box-shadow: 0px 2px 10px 2px rgba(black, .3);
+
+          @include media('>=desktop') {
+            height: 40vh;
+          }
+
+          img {
+            width: 100%;
+
+            @include media('>=desktop') {
+              position: absolute;
+              bottom: -50%;
+              left: 0;
+              right: 0;
+            }
+          }
+        }
+
+        .blogPostText {
+          padding: 0 10%;
+
+          h5 {
+            padding: 20px 0 10px;
+            font-weight: $light;
+          }
+
+          h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

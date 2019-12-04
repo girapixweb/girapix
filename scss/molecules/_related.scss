@@ -1,0 +1,59 @@
+.related {
+  height: 100%;
+  padding: 30px 10%;
+  background-color: $grey;
+
+  .relatedContent {
+    text-align: center;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+
+      @include media('>=desktop') {
+        font-size: 1.8rem;
+      }
+    }
+
+    .relateds {
+      @include media('>=tablet-wide', 'landscape') {
+        display: flex;
+      }
+
+      .relatedJob {
+        margin: 30px 0;
+
+        a {
+          display: block;
+          height: 100%;
+          text-transform: uppercase;
+          color: $dark-blue;
+          text-align: center;
+
+          &:hover {
+            color: $dark-blue;
+          }
+
+          img {
+            width: 100%;
+
+            @include media('landscape') {
+              width: 60%;
+              margin: 0 auto;
+            }
+          }
+
+          h3 {
+            font-size: 1.2rem;
+            padding: 10px 0 5px;
+            font-weight: $bsemi;
+          }
+
+          h4 {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

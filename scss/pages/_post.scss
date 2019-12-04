@@ -1,0 +1,75 @@
+.postDesc {
+  height: 100%;
+  padding: 30px 10%;
+  background-color: $dark-blue;
+  color: $grey;
+
+  .postDescContent {
+    text-align: center;
+
+    h5 {
+      font-size: .8rem;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 15px 0 30px;
+    }
+
+    .iconify {
+      color: $yellow;
+      font-size: 1.5rem;
+      margin-top: 15px;
+    }
+  }
+}
+
+.post {
+  height: 100%;
+  padding: 30px 10%;
+  background-color: $grey;
+  color: $dark-blue;
+  overflow: hidden;
+
+  p {
+    padding: 15px 0 15px;
+  }
+
+  .postImg {
+    margin: 15px 0;
+
+    @include media('>=desktop') {
+      height: 40vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+
+      @include media('>=desktop') {
+        position: absolute;
+        bottom: -40%;
+      }
+
+      @include media('>=desktop-ultra') {
+        position: absolute;
+        bottom: -60%;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .destaque {
+    height: 100%;
+    background-color: $dark-blue;
+    margin: 0 -30%;
+    color: $grey;
+    padding: 30px 30%;
+
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
+}

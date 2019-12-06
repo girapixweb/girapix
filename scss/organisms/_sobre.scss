@@ -42,6 +42,12 @@
       align-items: flex-start;
     }
 
+    h2 {
+      @include media('>=desktop') {
+        margin-bottom: 30px;
+      }
+    }
+
     .homeSobreService {
       text-align: center;
       margin-top: 30px;
@@ -62,7 +68,7 @@
         h3 {
           color: $blue;
           font-size: 1.3rem;
-          margin: 20px 10px;
+          margin-bottom: 20px;
         }
 
         p {

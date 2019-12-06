@@ -1,6 +1,6 @@
 .postDesc {
   height: 100%;
-  padding: 30px 10%;
+  padding: 60px 10% 30px;
   background-color: $dark-blue;
   color: $grey;
 
@@ -13,7 +13,7 @@
 
     h2 {
       margin: 0;
-      padding: 15px 0 30px;
+      padding: 15px 0 45px;
     }
 
     .iconify {
@@ -32,11 +32,15 @@
   overflow: hidden;
 
   p {
-    padding: 15px 0 15px;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    margin: 15px 0 30px;
   }
 
   .postImg {
-    margin: 15px 0;
+    margin: 0 0 30px;
 
     @include media('>=desktop') {
       height: 40vh;
@@ -67,6 +71,7 @@
     margin: 0 -30%;
     color: $grey;
     padding: 30px 30%;
+    margin-bottom: 30px;
 
     h2 {
       padding-bottom: 20px;
